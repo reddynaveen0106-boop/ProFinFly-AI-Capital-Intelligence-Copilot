@@ -79,7 +79,9 @@ export default function AIChatWidget({ forceOpen = false, onClose }) {
     setLoading(true);
 
     try {
-  const response = await fetch("http://127.0.0.1:8000/ai/query", {
+  const API_URL = import.meta.env.VITE_API_URL;
+
+  const response = await fetch(`${API_URL}/ai/query`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -88,6 +90,7 @@ export default function AIChatWidget({ forceOpen = false, onClose }) {
       question: msg,
     }),
   });
+
 
   if (!response.ok) {
     throw new Error("Backend request failed");

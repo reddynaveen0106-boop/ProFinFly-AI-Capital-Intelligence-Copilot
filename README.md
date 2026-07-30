@@ -32,17 +32,32 @@ This project demonstrates end-to-end DevOps practices, including application con
 - 🗄️ PostgreSQL database integration
 
 ## 🏗️ Architecture
- Internet
-                    │
-                    ▼
-               Nginx Reverse Proxy
-                    │
-        ┌───────────┴───────────┐
-        ▼                       ▼
-   React Frontend         FastAPI Backend
-                                  │
-                                  ▼
-                           PostgreSQL Database
+## 🏗️ Architecture
+
+```text
+                        Internet
+                            │
+                            ▼
+                    Nginx Reverse Proxy
+                            │
+            ┌───────────────┴───────────────┐
+            ▼                               ▼
+     React Frontend                 FastAPI Backend
+                                            │
+                                            ▼
+                                     PostgreSQL Database
+```
+
+### Architecture Workflow
+
+1. User accesses the application through the browser.
+2. Nginx serves the React frontend and acts as a reverse proxy.
+3. API requests are forwarded to the FastAPI backend.
+4. FastAPI processes business logic.
+5. PostgreSQL stores application and portfolio data.
+6. Docker containers package all services.
+7. Jenkins automates build and deployment.
+8. AWS EC2 hosts the production application.
 
 ## 🛠️ Technology Stack
 | Category | Technologies |
@@ -57,16 +72,98 @@ This project demonstrates end-to-end DevOps practices, including application con
 
 ## 📂 Project Structure
 
+```text
+ProFinFly-AI/
+│
+├── backend/                # FastAPI backend
+├── src/                    # React frontend source
+├── public/                 # Static assets
+├── docs/                   # Project documentation
+├── Architecture/           # Architecture diagrams
+├── Screenshots/            # Project screenshots
+│
+├── Dockerfile.frontend
+├── docker-compose.yml
+├── Jenkinsfile
+├── nginx.conf
+├── package.json
+├── README.md
+└── .gitignore
+```
+
 ## 🐳 Docker Deployment
+
+The application is containerized using Docker to provide a consistent deployment environment across development and production.
+
+### Components
+
+- React Frontend
+- FastAPI Backend
+- PostgreSQL Database
+- Nginx Reverse Proxy
+
+Docker Compose orchestrates all services and simplifies local development and deployment.
 
 ## 🔄 Jenkins CI/CD Pipeline
 
+The project uses Jenkins to automate the deployment workflow.
+
+### Pipeline Stages
+
+- Clone Repository
+- Install Dependencies
+- Build Frontend
+- Build Docker Images
+- Deploy Containers
+- Verify Deployment
+
+The CI/CD pipeline ensures consistent and repeatable deployments with minimal manual intervention.
 ## ☁️ AWS Deployment
+
+The application is deployed on AWS EC2 using Docker containers.
+
+### AWS Services Used
+
+- Amazon EC2
+- Security Groups
+- Elastic IP
+- Docker
+- Nginx
+- Jenkins
+
+This deployment demonstrates production-style cloud hosting and infrastructure management.
 
 ## 📸 Screenshots
 
+Screenshots will be added after deployment.
+
+- Application Dashboard
+- AI Assistant
+- Docker Containers
+- Jenkins Pipeline
+- AWS EC2 Instance
+- Nginx Configuration
+
 ## 📚 Documentation
+
+Detailed guides are available in the `docs` directory.
+
+- Installation Guide
+- Deployment Guide
+- Troubleshooting Guide
 
 ## 🚀 Future Improvements
 
+- Kubernetes deployment
+- Terraform infrastructure provisioning
+- GitHub Actions support
+- Monitoring with Prometheus & Grafana
+- AWS ECS/EKS deployment
+- AI-powered portfolio recommendations
 ## 👨‍💻 Author
+
+**Naveen Reddy**
+
+Cloud | DevOps | AI Deployment Enthusiast
+
+GitHub: https://github.com/reddynaveen0106-boop

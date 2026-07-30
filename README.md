@@ -32,7 +32,6 @@ This project demonstrates end-to-end DevOps practices, including application con
 - 🗄️ PostgreSQL database integration
 
 ## 🏗️ Architecture
-## 🏗️ Architecture
 
 ```text
                         Internet

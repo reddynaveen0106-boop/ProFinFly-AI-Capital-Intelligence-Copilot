@@ -1,44 +1,31 @@
-# 🚀 ProFinFly AI – Capital Intelligence Copilot
+# 🚀 ProFinFly AI
 
-An AI-powered financial intelligence platform built with React, FastAPI, and PostgreSQL.
+Badges
 
-## Tech Stack
+Short Description
 
-- React (Vite)
-- FastAPI
-- PostgreSQL
-- Docker
-- Docker Compose
-- Nginx
+## 📑 Table of Contents
 
-## Current Features
+# 📌 Project Overview
 
-- AI-powered financial assistant
-- REST API with FastAPI
-- PostgreSQL database integration
-- Dockerized multi-container architecture
-- Nginx reverse proxy
-- Environment-based configuration
+# ✨ Features
 
-## Project Status
+# 🏗️ Architecture
 
-✅ Backend Containerized
+# 🛠️ Technology Stack
 
-✅ Frontend Containerized
+# 📂 Project Structure
 
-✅ PostgreSQL Containerized
+# 🐳 Docker Deployment
 
-✅ Docker Compose Orchestration
+# 🔄 Jenkins CI/CD Pipeline
 
-✅ Nginx Reverse Proxy
+# ☁️ AWS Deployment
 
-## Upcoming
+# 📸 Screenshots
 
-- Jenkins CI/CD Pipeline
-- Terraform Infrastructure as Code
-- AWS Deployment
-- Kubernetes Orchestration
-- Monitoring & Logging
+# 📚 Documentation
 
----
-**More documentation and architecture diagrams will be added soon.**
+# 🚀 Future Improvements
+
+# 👨‍💻 Author
